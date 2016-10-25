@@ -1,0 +1,23 @@
+Programme AlgoInsertion
+
+Variables :
+
+i, j, frontiere: entier
+Tableau Tab[]: entier
+
+Début
+
+	Pour i <- 1 à 5
+		frontiere <- Tab[i]
+		j<-i
+		TantQue (j>0) ET (Tab[j-1] > frontiere) Faire
+				Tab[j] <- Tab[j-1]
+				j <- j-1
+
+		FinTantQue
+
+		Tab[j] <- frontiere		
+
+	FinPour
+Fin	
+

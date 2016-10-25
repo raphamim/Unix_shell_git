@@ -1,0 +1,100 @@
+Type
+ 	Structure TVehicule
+ 			marque : chaîne
+ 			modele : chaîne
+ 			annee : entier
+ 			prix : réel
+ 			couleur : chaîne
+ 	FinStructure
+
+ Var
+ Tableau car(20): Tvehicule
+ i : entier
+
+ Début
+
+
+ 	Pour i <- 0 à 19 faire
+ 		Afficher car[i].marque
+ 		Afficher car[i].modele
+ 		Afficher car[i].annee
+ 		Afficher car[i].prix
+ 		Afficher car[i].couleur
+
+ 	FinPour
+
+ Fin
+// FIN EXO 1 DEBUT EXO 2
+
+
+ Type 
+
+ 	Structure TMatiere
+ 			nom : chaîne
+ 			coeff : entier
+ 	FinStructure
+
+	Structure TEleve
+ 			nom : chaîne
+ 			prenom : chaîne
+ 			classe : chaîne
+ 	FinStructure
+
+ 	Structure TNote
+ 			matiere : TMatiere
+ 			eleve : TEleve
+ 			note : réel
+ 	FinStructure
+
+
+Var
+Tableau eleve(20): TEleve
+i,j : entier
+notes : réel
+Tableau matiere(4) : TMatiere
+
+Début
+	Pour i <- 0 à 19 faire
+		Saisir eleve[i].nom
+		Saisir eleve[i].prenom
+		Saisir eleve[i].classe
+	FinPour
+
+	Pour i <- 0 à 19 faire
+		Pour j <- 0 à 3
+			Saisir matiere[j].nom
+			Saisir matiere[j].coeff
+		FinPour
+
+	FinPour
+Fin
+// Correction EXO 2
+Type 
+
+ 	Structure TMatiere
+ 			nom : chaîne
+ 			coeff : entier
+ 	FinStructure
+
+	Structure TEleve
+ 			nom : chaîne
+ 			prenom : chaîne
+ 			classe : chaîne
+ 	FinStructure
+
+ 	Structure TNote
+ 			matiere : TMatiere
+ 			eleve : TEleve
+ 			note : réel
+ 	FinStructure
+
+ Var 
+ Tableaux notes[]: TNote
+ 
+Début
+ 	Pour i de 0 à taille(notes)-1
+ 		Saisir notes[i].note
+ 	FinPour
+Fin 		
+
+

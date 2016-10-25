@@ -1,0 +1,118 @@
+Recherche sequentielle :
+
+Pour rechercher si une valeur est présente dans un tableau, vous connaissez la méthode séquentielle: 
+On commence par le début du tableau et on parcourt le tableau jusqu'a trouver l'élément.
+
+Recherche dichotomique :
+Il faut que le tableau soit trié, on divise le tableau en 2 on choisit la partie ou le nombre recherché serait suceptible d'être selon la valeur attribué a la keys du milieu choisit. Et ainsi on répète l'opération afin de trouver si le nombre recherché éxiste.  
+
+Programme dichotomique
+
+Variables 
+		gauche, milieu, droite, X : entiers
+		trouvé: booléen 
+		Tableau Tab(100): entiers
+
+Début
+	
+	gauche <- 0
+	droite <- 99
+	trouvé <- faux 
+
+	TantQue((trouvé==faux)ET (gauche <= droite))Faire
+			milieu <- (gauche+droite)/2
+
+			Si (X==Tab[milieu]) Alors
+					trouvé <- vrai
+			Sinon si (X>Tab[milieu]) Alors
+					gauche <- milieu+1
+			Sinon
+					droite <- milieu -1 
+			FinSi
+	FinTantQue
+
+	Affiché trouvé
+
+Fin
+
+
+// EXO DICHOTOMIQUE
+
+Variables 
+		gauche, milieu, droite, X : entiers
+		trouvé: booléen 
+		Tableau Tab(100): entiers
+
+
+
+Début
+
+gauche <- 0
+droite <- 99
+trouvé <- faux
+
+	TantQue((trouvé==faux )ET (gauche <= droite) faire
+		milieu <- (gauche+droite)/2
+		Si (X==Tab[milieu]) alors
+			trouvé <- vrai
+		Sinon si (X > Tab[milieu])
+			gauche <- milieu+1
+		Sinon
+		droite <- milieu-1
+		FinSi
+
+	FinTantQue
+
+	Affiché trouvé 
+
+
+Fin
+// FIN EXO DICHOTOMIQUE
+
+//EXO TRI A BULLE
+
+Var :
+
+Tableau Tab(5): entier
+i,j,temp : entier 
+
+Début
+ 	Pour j <- 4 a 1 pas -1
+ 		Pour i <- 0 a j-1
+ 			Si (Tab[i] > Tab[i+1]) alors
+ 			trouvéemp <- Tab[i]
+ 				Tab[i] <- Tab[i+1]
+ 				Tab[i+1] <- temp
+			FinSi
+		FinPour
+	FinPour
+
+Fin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

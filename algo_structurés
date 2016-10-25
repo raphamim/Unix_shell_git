@@ -1,0 +1,37 @@
+algo structurés -> enregistrement de plusieurs données(ex: pour une personne --> nom,prénom,age, adresse...). Une structure est donc un ensemble de valeurs dont les éléments peuvent être 
+-> Objet
+
+La déclaration des structures se fait dans la section Type. Les bariables composants une structure sont appelées champs.
+ ex: 
+
+Type
+ 	Structure Nom_Type
+ 			Nom_Champ1 : Type_champ 1
+ 			Nom_Champ2 : Type_champ 2
+ 			Nom_ChampN : Type_champ N
+ 	FinStructure
+
+ ex 2:
+Type
+ 	Structure TPersonne
+ 			nom : chaîne
+ 			prenom : chaîne
+ 			age : entier
+ 	FinStructure
+
+
+ Une fois qu'on a défini un type structuré , on peut déclarer des variables enregistrements exactement dela m^me façon que l'on déclare des variables d'un type primitif.
+
+ Variable
+
+ 	personne1, personne2: TPersonne
+
+ Les enregistrements sont donc composés de pllusieurs zones de données correspondant aux champs.
+
+ Acceder aux champs d'un enregistrement -> Nom_enregistrement.Nom_champ
+
+ pour acceder a personne2 -> personne2.age
+
+ Les tableaux peuvent être de type structure, ex -> Tableau groupe(20): TPersonne
+
+ Acceder aux éléments dun tableau d'enregistrement -> Nom_Tab[indice].Nom_de_la_sous_variable
